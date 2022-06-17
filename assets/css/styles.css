@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+}
+
+h1 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: lightgrey;
+  font-weight: bold;
+  font-size: 50px;
+  margin-bottom: 40px;
+}
+
+#task-imput {
+  height: 30px;
+  width: 240px;
+  border-radius: 5px;
+  box-shadow: 3px 3px;
+}
+
+button {
+  height: 30px;
+  width: 80px;
+  border-radius: 5px;
+  box-shadow: 3px 3px;
+  cursor: pointer;
+}
+button:hover {
+  box-shadow: none;
+  height: 33px;
+  width: 83px;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+#tasks {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+  color: lightgray;
+  font-size: 20px;
+}
+
+input[type=checkbox] {
+  cursor: pointer;
+  margin: 10px;
+  height: 20px;
+  width: 20px;
+}
+input[type=checkbox]:checked ~ label {
+  text-decoration: line-through;
+  color: lightgreen;
+}
+
+.checkbox:checked {
+  background-color: chartreuse;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+}/*# sourceMappingURL=styles.css.map */
